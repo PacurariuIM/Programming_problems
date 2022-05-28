@@ -1,0 +1,23 @@
+1. Roman numbers
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+
+2. Numbers are formed by addition
+
+3. Some numbers are formed by subtraction:
+    I can be placed before V (5) and X (10) to make 4 and 9.
+    X can be placed before L (50) and C (100) to make 40 and 90.
+    C can be placed before D (500) and M (1000) to make 400 and 900.
+
+4. We receive a roman number as input
+
+5. We create a collection of key:value with roman symbols and corresponding number
+
+6. We go through the collection, subtracting the lower number if followed by a higher one, adding the others
+
+7. We return the integer result
