@@ -1,0 +1,15 @@
+Given a string s, find the length of the longest substring without repeating characters.
+
+Example 1:
+
+Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3.
+
+1. First and last strings don't have to be considered, we need a substring not a subsequence
+
+2. We create a new set, which will hold all the unique values that we add with the 2 pointers, left and right.
+
+3. If we come across a duplicate value to the right, we delete the one to the left from the set.
+
+4. We return the max size of the set, after a complete iteration.
