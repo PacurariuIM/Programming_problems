@@ -22,26 +22,19 @@ end = time.time()
 interval = end - start
 print(interval)
 
-results = [interval]
-with open("data.json", "w") as filehandle:
-    dic = {"results": results}
-    # data = json.load(filehandle)
-    # filehandle.seek(0)
-    json.dump(dic, filehandle, indent=4)
-    filehandle.close()
+file = open("data.json", "r")
+data = json.load(file)
+file = open("data.json", "w")
+data["results"].append(interval)
+json.dump(data, file, indent=4)
 
 
 
 
 
 
-# file = open("data.json", "w")
-# file.read()
-#
-# dic = {"results": results}
-# list_json = json.dumps(dic)
-# file.close()
-# print(dic)
+
+
 
 
 
