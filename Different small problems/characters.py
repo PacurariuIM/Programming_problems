@@ -13,4 +13,4 @@ def function(a: str, b: str):
         print(-1)
 
 
-function("a", "9")
+function("a", "B")

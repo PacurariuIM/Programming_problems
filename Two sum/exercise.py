@@ -1,10 +1,10 @@
-def twoSum(nums: list[int], target: int) -> list[int]:
-    dict = {}
+def two_sum(nums: list[int], target: int) -> list[int]:
+    d = {}
     for i, j in enumerate(nums):
         diff = target - j
-        if diff in dict:
-            return [dict[diff], i]
-        dict[j] = i
+        if diff in d:
+            return [d[diff], i]
+        d[j] = i
 
 
-print(twoSum([1, 2, 4], 6))
+print(two_sum([1, 2, 4], 6))
