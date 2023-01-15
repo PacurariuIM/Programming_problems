@@ -13,11 +13,13 @@ def digits(x):
     [4, 5, 8, 6, 3, 7, 8]
     """
 
+    import pdb; pdb.set_trace()
+
     digs = []
     while x != 0:
         div, mod = divmod(x, 10)
         digs.append(mod)
-        x = mod
+        x = div
     return digs
 
 
