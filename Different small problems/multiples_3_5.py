@@ -9,11 +9,7 @@
 
 
 def multiples(n):
-    for i in range(0, n):
-        for j in range(0, n):
-            if i % 3 == 0 and j % 5 == 0:
-                print(i + j)
-
+    return sum(i for i in range(0, n) if i % 3 == 0 or i % 5 == 0)
 
 
 print(multiples(10))
