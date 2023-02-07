@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: palindrome
+Version: 1.0
+Summary: A module for finding palindromic numbers
+Author: Ionel Pacurariu
+Author-email: ionel.mihai.pacurariu@gmail.com
+License: Public domain
+Keywords: example
