@@ -16,4 +16,4 @@ def vowels_count(word):
     return "".join(lista)
 
 
-print(vowels_count("vowelone"))
+print(vowels_count("vowelonea"))
