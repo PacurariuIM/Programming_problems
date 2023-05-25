@@ -8,3 +8,4 @@ def two_sum(nums: list[int], target: int) -> list[int]:
 
 
 print(two_sum([1, 2, 4], 6))
+
